@@ -1,3 +1,9 @@
+<?php 
+    include_once("./config/db.php");
+    $db = new DB();
+    $projects = $db->SQLSelect("SELECT * FROM projects");
+    // print_r($projects);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +13,10 @@
     <title>Osama Benali</title>
     <!-- CSS files -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-  <!-- Header -->
+    <!-- Header -->
     <header class="bg-dark text-white">
         <div class="container text-center">
             <h1>Osama Benali</h1>
@@ -73,36 +79,32 @@
         <div class="container">
             <h2 class="text-center">Projects</h2>
             <div class="row mt-4">
-                <div class="col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title">Portfolio Website</h3>
-                            <p class="card-text">A simple portfolio website showcasing my skills and projects.</p>
-                            <a target="_blank" href="https://osamabenali.tech" class="btn btn-primary">Click here</a>
+                <?php foreach($projects as $project): ?>
+                    
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h3 class="card-title"><?= $project["title"] ?></h3>
+                                <p class="card-text"><?= $project["description"] ?></p>
+                                <a target="_blank" href="<?= $project["link"] ?>" class="btn btn-primary">Click here</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title">Blog App</h3>
-                            <p class="card-text">Comprehensive blog platform that offers various features for user interaction and content management.</p>
-                            <a target="_blank" href="https://wessblog.wuaze.com/" class="btn btn-primary">Click here</a>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
+        </div>
+        <div class="text-center addP">
+            <a href="./add.php" class="btn btn-success">Add project</a>
         </div>
     </section>
     <!-- Download PDF button -->
     <div class="container text-center">
-      <a id="downloadBtn" download href="cv.pdf" class="btn btn-success">Download CV</a>
+        <a id="downloadBtn" download href="cv.pdf" class="btn btn-success">Download CV</a>
     </div>
     <!-- Footer -->
     <footer class="bg-dark text-white text-center">
         <p>&copy; 2024 Osama Benali</p>
     </footer>
-
     <!-- JS files -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>

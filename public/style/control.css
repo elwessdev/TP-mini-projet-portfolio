@@ -22,20 +22,20 @@ body {
   font-size: 24px;
   color: #333;
 }
-.form-container form {
+.form-container .fom {
   display: flex;
   flex-direction: column;
 }
-.form-container form .form-group {
+.form-container .fom .form-group {
   margin-bottom: 20px;
 }
-.form-container form .form-group label {
+.form-container .fom .form-group label {
   font-size: 14px;
   margin-bottom: 5px;
   display: block;
   color: #555;
 }
-.form-container form .form-group input, .form-container form .form-group textarea {
+.form-container .fom .form-group input, .form-container .fom .form-group textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -44,14 +44,14 @@ body {
   font-size: 16px;
   transition: border-color 0.3s;
 }
-.form-container form .form-group input:focus, .form-container form .form-group textarea:focus {
+.form-container .fom .form-group input:focus, .form-container .fom .form-group textarea:focus {
   border-color: #007bff;
   outline: none;
 }
-.form-container form .form-group textarea {
+.form-container .fom .form-group textarea {
   resize: vertical;
 }
-.form-container form button {
+.form-container .fom button {
   padding: 12px;
   background-color: #007bff;
   color: white;
@@ -61,6 +61,6 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.form-container form button:hover {
+.form-container .fom button:hover {
   background-color: #0056b3;
 }/*# sourceMappingURL=control.css.map */

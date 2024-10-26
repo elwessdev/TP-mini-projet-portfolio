@@ -1,34 +1,35 @@
 # Portefeuille Personnel
-Ce projet est un site web de portefeuille. Il inclut maintenant la possibilité d'ajouter des projets à une base de données et de les afficher sur la page d'accueil.
 
-## Contenu du site
+Ce projet est un site web de portefeuille, maintenant alimenté par Firebase pour gérer les données de projets.je peuvent ajouter de nouveaux projets à la base de données Firebase, qui sont ensuite affichés sur la page d'accueil.
+
+## 📑 Contenu du site
 
 - **Index** : Page principale avec une brève description de moi, mes compétences et mes projets.
 - **Styles** : Utilisation de CSS pour styliser les éléments de la page.
 - **Bouton de téléchargement** : Un bouton pour télécharger mon CV au format PDF.
-- **Nouvelle page d'ajout de projets** : Une page permettant d'ajouter des projets à une base de données.
-- **Affichage des projets** : Les projets ajoutés sont affichés sur la page d'accueil.
+- **Nouvelle page d'ajout de projets** : Une page permettant d'ajouter des projets dans Firebase.
+- **Affichage des projets** : Les projets ajoutés sont affichés dynamiquement depuis Firebase sur la page d'accueil.
 
-## Fonctionnalités
+## 🌟 Fonctionnalités
 
-- Affichage de mes compétences dans le développement web.
+- Affichage de mes compétences en développement web.
 - Liste de mes projets actuels, avec des liens pour les visualiser.
-- Possibilité d'ajouter des projets via une page dédiée et de les stocker dans une base de données.
-- Un bouton **Ajouter un travail** sous la section des projets pour enrichir la liste.
+- Possibilité d'ajouter des projets via une page dédiée et de les stocker dans Firebase.
+- Un bouton **Add project** sous la section des projets pour enrichir la liste.
 - Les projets ajoutés sont ensuite visibles sur la page d'accueil.
 
-## Branches
+## 📂 Branches
 
-- **normal-work** : Contient la version simple du projet sans intégration de base de données. Disponible ici : [https://elwessdev.github.io/mini-projet-portfolio](https://elwessdev.github.io/mini-projet-portfolio)
-- **main** : La version principale avec les nouvelles fonctionnalités d'ajout de projets à une base de données. Disponible ici : [http://osama-portfolio.rf.gd](http://osama-portfolio.rf.gd/)
+- **normal-work** : Contient la version simple sans intégration de Firebase, disponible ici : [https://elwessdev.github.io/mini-projet-portfolio](https://elwessdev.github.io/mini-projet-portfolio)
+- **main** : La version principale avec Firebase pour ajouter et afficher les projets. Disponible ici : [https://git-portfolio-d8e13.web.app](https://git-portfolio-d8e13.web.app/)
 
-## Technologies utilisées
+## 🛠 Technologies utilisées
 
 - **HTML** : Structuration du contenu de la page.
 - **CSS** : Mise en page et design.
-- **PHP/MySQL** : Gestion de la base de données pour ajouter et afficher des projets.
+- **JavaScript/Firebase** : Gestion de la base de données pour ajouter et afficher des projets.
 
-## Instructions
+## 📋 Instructions
 
 1. Cloner ce dépôt :
    ```bash

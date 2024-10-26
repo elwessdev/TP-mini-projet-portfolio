@@ -33,4 +33,4 @@ Ce projet est un site web de portefeuille, maintenant alimenté par Firebase pou
 
 1. Cloner ce dépôt :
    ```bash
-   git clone https://github.com/elwessdev/mini-projet-portfolio.git
+   git clone https://github.com/elwessdev/TP-mini-projet-portfolio.git

@@ -20,8 +20,8 @@ Ce projet est un site web de portefeuille, maintenant alimenté par Firebase pou
 
 ## 📂 Branches
 
-- **normal-work** : Contient la version simple sans intégration de Firebase, disponible ici : [https://elwessdev.github.io/mini-projet-portfolio](https://elwessdev.github.io/mini-projet-portfolio)
-- **main** : La version principale avec Firebase pour ajouter et afficher les projets. Disponible ici : [https://git-portfolio-d8e13.web.app](https://git-portfolio-d8e13.web.app/)
+- **normal-work** : Contient la version simple sans intégration de Firebase, disponible ici : [https://elwessdev.github.io/TP-mini-projet-portfolio](https://elwessdev.github.io/TP-mini-projet-portfolio)
+- **main** : La version principale avec Firebase pour ajouter et afficher les projets. Disponible ici : [https://git-portfolio-d8e13.web.app](https://git-portfolio-d8e13.web.app)
 
 ## 🛠 Technologies utilisées
 
@@ -33,4 +33,4 @@ Ce projet est un site web de portefeuille, maintenant alimenté par Firebase pou
 
 1. Cloner ce dépôt :
    ```bash
-   git clone https://github.com/elwessdev/mini-projet-portfolio.git
+   git clone https://github.com/elwessdev/TP-mini-projet-portfolio.git
